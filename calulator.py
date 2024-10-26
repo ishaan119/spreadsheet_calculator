@@ -85,7 +85,7 @@ def main():
     for i in range(cells_len):
         cell_to_expression_dict[cells[i]] = expressions[i]
 
-    results = []
+    results = ["{0} {1}".format(rows, columns)]
     evaluated_cell_values = {}
     visited_cells = []
     for cell in cells:
